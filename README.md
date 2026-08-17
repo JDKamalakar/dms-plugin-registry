@@ -112,7 +112,7 @@ A simple, customizable audio visualizer for your desktop
 
 #### [DMS Theme Sync](https://github.com/arqueon/dms-theme-sync)
 
-Make DMS the source of truth for appearance and propagate it to GTK, Qt, KDE, Fontconfig and XWayland apps — theme, light/dark, fonts, sizes, icons and cursor.
+Make DMS the source of truth for appearance and propagate it to GTK, Qt, KDE, Fontconfig and XWayland apps — theme, light/dark, fonts, sizes, icons and cursor, with optional Matugen-accent folder colors and Bibata-Material cursor variants.
 
 
 
@@ -121,7 +121,7 @@ Make DMS the source of truth for appearance and propagate it to GTK, Qt, KDE, Fo
 - author: arqueon
 - compositors: any
 - capabilities: dankbar-widget, daemon, ipc
-- dependencies: bash
+- dependencies: bash, dbus-send
 - distro: any
 
 
@@ -197,6 +197,35 @@ Animated wallpaper support using linux-wallpaperengine with Steam Workshop scene
 
 
 
+#### [Material Weather](https://github.com/notsopreety/materialWeather)
+
+Android Material You 3 styled weather widget with current conditions, forecasts, and dynamic shapes
+
+
+
+- id: materialWeather
+- name: Material Weather
+- author: notsopreety (Samir Badaila)
+- compositors: any
+- capabilities: desktop-widget
+- dependencies: 
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/notsopreety/materialWeather/main/assets/cookie-badge-stadium.png)
+
+</details>
+
+
+
+
+
 #### [Media Frame](https://codeberg.org/claymorwan/dms-plugins)
 
 Desktop plugin to display a picture on your desktop
@@ -253,6 +282,35 @@ Play and switch video wallpapers with multi-monitor support, lock-screen power s
 <summary>Screenshot</summary>
 
 ![screenshot](https://raw.githubusercontent.com/tokisak1kurum1/mpvpaper-plugin/master/screenshot.png)
+
+</details>
+
+
+
+
+
+#### [Spotify Matugen](https://github.com/Grant07/dms-spotify-matugen)
+
+Lock DMS dynamic colors to Spotify album art while music is playing
+
+
+
+- id: spotifyMatugen
+- name: Spotify Matugen
+- author: Grant Mosha
+- compositors: any
+- capabilities: daemon
+- dependencies: spotify, matugen
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/Grant07/dms-spotify-matugen/main/assets/screenshot.png)
 
 </details>
 
@@ -452,6 +510,35 @@ A living tree on your desktop that grows as long as DankMaterialShell does. Wate
 
 
 
+#### [Audio Output Monitor](https://github.com/thiswod/dank-audio-output-monitor)
+
+Identify applications currently or recently using audio output, including short-lived notification sounds.
+
+
+
+- id: audioOutputMonitor
+- name: Audio Output Monitor
+- author: thiswod
+- compositors: any
+- capabilities: dankbar-widget
+- dependencies: pactl, pw-mon, parec, python3
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/thiswod/dank-audio-output-monitor/main/assets/screenshot.png)
+
+</details>
+
+
+
+
+
 #### [Audio Port Switcher](https://github.com/osvaldx/Audio-Port-Switcher)
 
 Switch audio ports on a 3.5mm combo jack (internal mic vs headset mic) dynamically.
@@ -528,7 +615,7 @@ Near-live market prices for currencies, stocks, and commodities with charts.
 
 #### [DMS Last.fm Scrobbler](https://github.com/arqueon/dms-scrobbler)
 
-Scrobble MPRIS music to Last.fm, love/unlove tracks from the bar or via IPC, with media controls, album art, scrobble progress, an offline retry queue, and a live audio visualizer.
+Last.fm companion for the native DMS media player: scrobbling, love/unlove actions, profile links, scrobble progress, and an offline retry queue.
 
 
 
@@ -536,7 +623,7 @@ Scrobble MPRIS music to Last.fm, love/unlove tracks from the bar or via IPC, wit
 - name: DMS Last.fm Scrobbler
 - author: arqueon
 - compositors: any
-- capabilities: dankbar-widget, control-center, ipc
+- capabilities: daemon, dankbar-widget, control-center, ipc
 - dependencies: python3
 - distro: any
 
@@ -577,6 +664,64 @@ Circular audio visualizer with bars, wave, rings, and bloom effects. Ported from
 <summary>Screenshot</summary>
 
 ![screenshot](https://raw.githubusercontent.com/odtgit/DankAudioVisualizer/main/preview.png)
+
+</details>
+
+
+
+
+
+#### [Material Player & Lyrics](https://github.com/notsopreety/materialPlayer)
+
+Desktop media player widget with real-time synced lyrics and Material You 3 design
+
+
+
+- id: materialPlayer
+- name: Material Player & Lyrics
+- author: Samir Badaila
+- compositors: any
+- capabilities: desktop-widget
+- dependencies: cava, python
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/notsopreety/materialPlayer/refs/heads/main/assets/preview.png)
+
+</details>
+
+
+
+
+
+#### [SPlayer Lyrics (Desktop)](https://github.com/brkp/DMS_splayerLyrics)
+
+Desktop lyrics widget for SPlayer, fetches lyrics from SPlayer's local Netease API
+
+
+
+- id: splayerDesktopLyrics
+- name: SPlayer Lyrics (Desktop)
+- author: brkpt
+- compositors: any
+- capabilities: desktop-widget
+- dependencies: 
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/brkp/DMS_splayerLyrics/main/screenshot.png)
 
 </details>
 
@@ -998,6 +1143,35 @@ Claude Code 5-hour and weekly subscription limits in your bar, as theme-colored 
 
 
 
+#### [CodeBurn](https://github.com/gtheys/dms-codeburn)
+
+Monitor AI coding assistant token usage and costs from DankBar — cost pill, popup dashboard with insights, budget alerts, and multi-currency conversion
+
+
+
+- id: codeburn
+- name: CodeBurn
+- author: Geert Theys
+- compositors: any
+- capabilities: dankbar-widget
+- dependencies: codeburn, bash, jq
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/gtheys/dms-codeburn/main/docs/screenshot.png)
+
+</details>
+
+
+
+
+
 #### [Codeforces Heatmap](https://github.com/EchoSingh/codeforces-dms-plugin)
 
 Display daily Codeforces problem solving activity with a color-coded heatmap
@@ -1390,6 +1564,35 @@ Shows a customizable indicator when a Hyprland submap is active
 
 
 
+#### [I/O Monitor](https://github.com/rollecode/dms-io-monitor)
+
+Live disk read and write throughput as an animated progress bar in your DankBar
+
+
+
+- id: ioMonitor
+- name: I/O Monitor
+- author: Rolle Laukkarinen
+- compositors: any
+- capabilities: dankbar-widget
+- dependencies: 
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/rollecode/dms-io-monitor/main/Screenshot.png)
+
+</details>
+
+
+
+
+
 #### [Intel GPU Monitor](https://github.com/rdannenbring/dms-intel-gpu-plugin)
 
 Monitor Intel GPU usage, VRAM and temperature in the DankBar with configurable charts and a per-process detail view — reads kernel DRM fdinfo and sysfs directly, no root or extra tools required.
@@ -1412,6 +1615,35 @@ Monitor Intel GPU usage, VRAM and temperature in the DankBar with configurable c
 <summary>Screenshot</summary>
 
 ![screenshot](https://raw.githubusercontent.com/rdannenbring/dms-intel-gpu-plugin/main/Screenshot.png)
+
+</details>
+
+
+
+
+
+#### [NVIDIA GPU Dankbar Monitor](https://github.com/Reverssss/dms-nvidia-gpu-monitor)
+
+Monitor NVIDIA GPU usage, VRAM, temperature, power consumption and process usage.
+
+
+
+- id: nvidiaGpuDankbarMonitor
+- name: NVIDIA GPU Dankbar Monitor
+- author: Revers
+- compositors: any
+- capabilities: dankbar-widget, monitoring
+- dependencies: nvidia-smi
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/Reverssss/dms-nvidia-gpu-monitor/refs/heads/main/docs/images/screenshot.png)
 
 </details>
 
@@ -1685,6 +1917,35 @@ Monitor active SSH, SFTP, FTP, and Yazi VFS connections with hostname resolution
 
 
 
+#### [System Monitor](https://github.com/chr314/dms-system-monitor)
+
+Real-time CPU, temperature, RAM, network, disk and GPU line charts for the DankBar
+
+
+
+- id: systemMonitor
+- name: System Monitor
+- author: Christoforos Aslanov
+- compositors: any
+- capabilities: dankbar-widget
+- dependencies: dgop
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/chr314/dms-system-monitor/refs/heads/master/screenshots/popup.png)
+
+</details>
+
+
+
+
+
 #### [VRAM Monitor](https://github.com/rollecode/dms-vram-monitor)
 
 NVIDIA VRAM usage as an animated progress bar in your DankBar, updated every second
@@ -1714,6 +1975,35 @@ NVIDIA VRAM usage as an animated progress bar in your DankBar, updated every sec
 
 
 
+#### [VoxType OSD](https://github.com/irisblur17/dms-voxtype-osd)
+
+VoxType recording and transcription waveform OSD
+
+<strong>requires DMS version</strong>: <em>>=1.5.0</em>
+
+- id: voxTypeOsd
+- name: VoxType OSD
+- author: Iris Blur
+- compositors: any
+- capabilities: monitoring
+- dependencies: voxtype, voxtype-audio-bridge
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/irisblur17/dms-voxtype-osd/main/screenshot.png)
+
+</details>
+
+
+
+
+
 #### [Webcam Viewer](https://github.com/antikytheraton/DankWebcamViewer)
 
 Shows RTSP camera streams via vlc/ffplay/mpv from the DankBar
@@ -1736,6 +2026,35 @@ Shows RTSP camera streams via vlc/ffplay/mpv from the DankBar
 <summary>Screenshot</summary>
 
 ![screenshot](https://raw.githubusercontent.com/antikytheraton/DankWebcamViewer/main/assets/screenshot.png)
+
+</details>
+
+
+
+
+
+#### [ZmkBattery](https://github.com/ayaOwO/ZmkBattery)
+
+Shows central and peripheral battery levels for a ZMK split keyboard
+
+
+
+- id: zmkBattery
+- name: ZmkBattery
+- author: ayak
+- compositors: any
+- capabilities: dankbar-widget, process
+- dependencies: bash, busctl, jq
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/ayaOwO/ZmkBattery/main/screenshot.png)
 
 </details>
 
@@ -1822,6 +2141,35 @@ Show ZeroTier network status in the bar and join/leave/route networks from a pop
 
 
 ### Productivity
+
+
+
+#### [Attention Badges](https://github.com/mkoester/dms-attention-badges)
+
+Per-app bar badges for what happened since you last focused that app, cleared by focusing its window — not an unread counter. Every watched app is a small JSON provider file, so the plugin itself knows nothing about any particular program.
+
+<strong>requires DMS version</strong>: <em>>=1.5.0</em>
+
+- id: attentionBadges
+- name: Attention Badges
+- author: Mirko Köster
+- compositors: any
+- capabilities: daemon, dankbar-widget, ipc
+- dependencies: 
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/mkoester/dms-attention-badges/main/docs/screenshot.png)
+
+</details>
+
+
 
 
 
@@ -2108,6 +2456,64 @@ Your Wallabag read-it-later queue in the DankBar: unread badge, entry list with 
 <summary>Screenshot</summary>
 
 ![screenshot](https://raw.githubusercontent.com/arqueon/dms-wallabag/main/assets/screenshot.png)
+
+</details>
+
+
+
+
+
+#### [dms-ntfy](https://github.com/arqueon/dms-ntfy)
+
+A persistent ntfy review inbox for the DankBar with All and per-topic views, unread state, local search, links, attachments, and explicit local dismissal. Supports ntfy.sh and any self-hosted instance.
+
+<strong>requires DMS version</strong>: <em>>=1.5.0</em>
+
+- id: ntfy
+- name: dms-ntfy
+- author: arqueon
+- compositors: any
+- capabilities: daemon, dankbar-widget, ipc
+- dependencies: curl, secret-tool, base64
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/arqueon/dms-ntfy/main/assets/screenshot.png)
+
+</details>
+
+
+
+
+
+#### [dms-vikunja](https://github.com/arqueon/dms-vikunja)
+
+Manage Vikunja projects and tasks from DankBar with nested project and label views, due dates, priorities, attachments, and notifications.
+
+<strong>requires DMS version</strong>: <em>>=1.5.0</em>
+
+- id: dmsVikunja
+- name: dms-vikunja
+- author: arqueon
+- compositors: any
+- capabilities: daemon, dankbar-widget, control-center, notifications
+- dependencies: python3, secret-tool, notify-send
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/arqueon/dms-vikunja/main/assets/screenshot.png)
 
 </details>
 
@@ -2450,6 +2856,35 @@ Manage Power Profiles and GPU Modes for ASUS Laptops directly from your DankBar.
 
 
 
+#### [Dank Software Depot](https://github.com/vinceecniv/DankSoftwareDepot)
+
+Software & updates center: rich update cards with release notes, app store for system repos/Flathub/AppImage with ratings and reviews, installed-software management, firmware updates and an action log. Fedora first; Debian/Ubuntu and Arch experimental.
+
+<strong>requires DMS version</strong>: <em>>=1.5.0</em>
+
+- id: dankSoftwareDepot
+- name: Dank Software Depot
+- author: Vincent Blok
+- compositors: any
+- capabilities: dankbar-widget
+- dependencies: python3, python3-gobject, flatpak, python3-libdnf5 (Fedora), python3-apt (Debian/Ubuntu), pyalpm (Arch)
+- distro: fedora, debian, ubuntu, arch
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/vinceecniv/DankSoftwareDepot/main/screenshot.png)
+
+</details>
+
+
+
+
+
 #### [Dank System Doctor](https://github.com/NordicsSys/DankSystemDoctor)
 
 AI-powered system health monitor. Tracks CPU, RAM, disk, GPU & temp; detects pending updates (apt/dnf/pacman/brew); one-click maintenance and snapshot guardrails; Ollama diagnostics with triage playbooks.
@@ -2595,6 +3030,35 @@ Network toggle with Ethernet, WiFi, and Other interfaces (bridges, VLANs, bonds)
 
 
 
+#### [Framework Fan Control](https://github.com/clementpoiret/dms-fwfanctrl)
+
+Monitor Framework Laptop fan status and switch fw-fanctrl strategies from DankBar
+
+
+
+- id: fwFanctrl
+- name: Framework Fan Control
+- author: clementpoiret
+- compositors: any
+- capabilities: dankbar-widget
+- dependencies: fw-fanctrl
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/clementpoiret/dms-fwfanctrl/main/docs/widget-preview.png)
+
+</details>
+
+
+
+
+
 #### [IP Indicator](https://github.com/hthienloc/dms-ipIndicator)
 
 Display public IP address, ISP, and location with a privacy-focused toggle.
@@ -2646,6 +3110,40 @@ Manage Lenovo battery settings like conservation mode
 <summary>Screenshot</summary>
 
 ![screenshot](https://raw.githubusercontent.com/neoscaler/dms-lenovo-battery-settings/refs/heads/main/screenshot.png)
+
+</details>
+
+
+
+
+
+#### [Mihomo VPN](https://github.com/korbash/mihomo-dms-widget)
+
+Monitor and control Mihomo proxy groups, switch nodes, and run latency checks from DankBar
+
+<strong>requires DMS version</strong>: <em>>=1.5.0</em>
+
+- id: mihomoVpn
+- name: Mihomo VPN
+- author: korbash
+- compositors: any
+- capabilities: dankbar-widget
+- dependencies: mihomo, curl, jq
+- distro: any
+
+
+
+> [!NOTE]
+> This plugin is part of a monorepo, please copy the contents of the [plugin](https://github.com/korbash/mihomo-dms-widget/tree/main/plugin) folder to your `~/.config/DankMaterialShell/plugins/` folder.
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/korbash/mihomo-dms-widget/main/assets/mihomo-vpn.png)
 
 </details>
 
@@ -2800,7 +3298,7 @@ Turn off monitors from DankBar or Control Center.
 
 #### [Shelly Updater](https://github.com/rdannenbring/dms-shelly-updater)
 
-Comprehensive system update widget backed by the Shelly (ALPM) CLI — pacman, AUR, Flatpak and AppImage in one DankBar pill with a detailed updates view and an action menu.
+Comprehensive system update widget backed by the Shelly (ALPM) CLI — pacman, AUR, Flatpak and AppImage in one DankBar pill with a detailed updates view, action menu, and control-center panel. Requires Shelly v3+.
 
 
 
@@ -2808,8 +3306,8 @@ Comprehensive system update widget backed by the Shelly (ALPM) CLI — pacman, A
 - name: Shelly Updater
 - author: rdannenbring
 - compositors: any
-- capabilities: dankbar-widget
-- dependencies: shelly
+- capabilities: dankbar-widget, control-center
+- dependencies: shelly>=3
 - distro: arch
 
 
@@ -2907,6 +3405,35 @@ Bar widget: monitor removable USB drives, mount/unmount, eject, format (FAT32/ex
 <summary>Screenshot</summary>
 
 ![screenshot](https://raw.githubusercontent.com/NordicsSys/dms-usb-manager/main/assets/screenshot.png)
+
+</details>
+
+
+
+
+
+#### [VMonitorSRV](https://github.com/JessVolet/VMonitorSRV)
+
+Monitor remote Linux servers running Glances: CPU, RAM, Btrfs subvolumes, network interfaces, and Podman containers.
+
+
+
+- id: vMonitorSRV
+- name: VMonitorSRV
+- author: JessVolet
+- compositors: any
+- capabilities: dankbar-widget, desktop-widget
+- dependencies: python3, glances, glances-dotfiles
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/JessVolet/VMonitorSRV/main/screenshot.png)
 
 </details>
 
@@ -3391,6 +3918,35 @@ CPU temperature and fan speed monitor for DankBar using Linux hwmon
 
 
 
+#### [Caffeine Redesigned](https://github.com/JDKamalakar/DMS-Caffeine)
+
+Keep your screen awake and prevent idle sleep with a single click.
+
+
+
+- id: caffeineRedesigned
+- name: Caffeine Redesigned
+- author: JDKamalakar
+- compositors: any
+- capabilities: control-center, dankbar-widget
+- dependencies: 
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/JDKamalakar/DMS-Caffeine/refs/heads/main/assets/POP-Up_UI.png)
+
+</details>
+
+
+
+
+
 #### [Calculator](https://github.com/rochacbruno/DankCalculator)
 
 A calculator plugin that evaluates mathematical expressions and copies results to clipboard
@@ -3580,6 +4136,35 @@ Advanced clipboard manager with integrated notes, todo, and pinned items.
 
 
 
+#### [ClipShare](https://github.com/agneswd/dms-clipshare)
+
+Record a screen region, compress it for sharing, or upload it to Catbox with an optional Autocompressor embed link.
+
+
+
+- id: clipShare
+- name: ClipShare
+- author: agneswd
+- compositors: any
+- capabilities: daemon, ipc
+- dependencies: gpu-screen-recorder, ffmpeg, slurp, pactl, curl, jq
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/agneswd/dms-clipshare/main/assets/screenshot.png)
+
+</details>
+
+
+
+
+
 #### [CodeIsland](https://github.com/payprays/codeIsland-dms)
 
 AI coding session island for DankMaterialShell with Codex, Claude Code, and OpenCode session cards on niri.
@@ -3694,6 +4279,35 @@ Universal unit and color converter. Convert distance, weight, temperature, speed
 <summary>Screenshot</summary>
 
 ![screenshot](https://raw.githubusercontent.com/viewerofall-labs/weather-viewer/main/convert.png)
+
+</details>
+
+
+
+
+
+#### [Cursor Highlight](https://github.com/ReyArlena/dms-cursor-highlight)
+
+Cursor highlight for presentations, screen sharing or gaming. Bar widget toggle, rainbow mode, per-style settings, IPC keybind support.
+
+
+
+- id: cursorHighlight
+- name: Cursor Highlight
+- author: ReyArlena
+- compositors: hyprland
+- capabilities: daemon, dankbar-widget, ipc
+- dependencies: python3
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/ReyArlena/dms-cursor-highlight/main/assets/screenshot.png)
 
 </details>
 
@@ -3875,6 +4489,40 @@ File Manager For DMS - browse, manage and organize files on your desktop
 
 
 
+#### [DMS Ketchup](https://github.com/virtualwolf-369/dms-ketchup)
+
+Ketchup timer with break modal, sounds, and manual resume controls
+
+
+
+- id: dmsKetchup
+- name: DMS Ketchup
+- author: Virtual Wolf 369
+- compositors: any
+- capabilities: dankbar-widget
+- dependencies: 
+- distro: any
+
+
+
+> [!NOTE]
+> This plugin is part of a monorepo, please copy the contents of the [DankPomodoroTimer](https://github.com/virtualwolf-369/dms-ketchup/tree/main/DankPomodoroTimer) folder to your `~/.config/DankMaterialShell/plugins/` folder.
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/virtualwolf-369/dms-ketchup/main/docs/screenshots/panel.png)
+
+</details>
+
+
+
+
+
 #### [DMS Nothing X](https://github.com/Bestello/dms-nothingx)
 
 Control center for Nothing and CMF audio devices
@@ -3915,7 +4563,7 @@ Control DMS screenshot actions from the Widget & Control Center
 - author: JDKamalakar
 - compositors: any
 - capabilities: dankbar-widget, control-center
-- dependencies: dms
+- dependencies: 
 - distro: any
 
 
@@ -4002,7 +4650,7 @@ Switch system DNS providers and monitor network status.
 - author: JDKamalakar
 - compositors: any
 - capabilities: dankbar-widget, control-center
-- dependencies: dms
+- dependencies: 
 - distro: any
 
 
@@ -4202,6 +4850,35 @@ Trigger scripts based on various system events.
 <summary>Screenshot</summary>
 
 ![screenshot](https://raw.githubusercontent.com/AvengeMedia/dms-plugin-registry/master/assets/dank-hooks.png)
+
+</details>
+
+
+
+
+
+#### [Dank Jobs](https://github.com/TabelaDev/dank-jobs-plugin)
+
+Shows the next pending djobs job in the bar and lists all pending jobs in a popout, with status dots and auto-refresh.
+
+
+
+- id: djobs
+- name: Dank Jobs
+- author: Ian Soares
+- compositors: any
+- capabilities: dankbar-widget
+- dependencies: djobs
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/TabelaDev/dank-jobs-plugin/main/plugin-screenshot.png)
 
 </details>
 
@@ -4490,9 +5167,9 @@ GPG/SSH passphrase entry with native DMS modal.
 
 
 
-#### [Dankmail Unread](https://github.com/arqueon/dms-dankmail)
+#### [Dankmail Unread](https://github.com/arqueon/dankmail)
 
-Live unread mail badge for dankmail with a triage popout: recent inbox with per-message actions, compose, sync and DND. Requires the dmail daemon.
+The DankMaterialShell companion shipped with Dankmail: live unread status and quick triage powered by the same dmail daemon.
 
 
 
@@ -4506,12 +5183,17 @@ Live unread mail badge for dankmail with a triage popout: recent inbox with per-
 
 
 
+> [!NOTE]
+> This plugin is part of a monorepo, please copy the contents of the [dms-plugin](https://github.com/arqueon/dankmail/tree/main/dms-plugin) folder to your `~/.config/DankMaterialShell/plugins/` folder.
+
+
+
 
 
 <details>
 <summary>Screenshot</summary>
 
-![screenshot](https://raw.githubusercontent.com/arqueon/dms-dankmail/main/assets/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/arqueon/dankmail/main/assets/screenshot.png)
 
 </details>
 
@@ -5120,7 +5802,7 @@ Material 3 inspired fullscreen Power Menu triggered via IPC
 - author: JDKamalakar
 - compositors: any
 - capabilities: power, ipc
-- dependencies: dms
+- dependencies: 
 - distro: any
 
 
@@ -5172,6 +5854,35 @@ Search and browse GIFs powered by Klipy
 
 
 
+#### [Gaze Authentication](https://github.com/arqueon/dms-gaze-auth)
+
+Inspect Gaze face-authentication health and DMS lock integration without changing PAM or biometric data.
+
+<strong>requires DMS version</strong>: <em>>=1.5.0</em>
+
+- id: gazeAuth
+- name: Gaze Authentication
+- author: arqueon
+- compositors: any
+- capabilities: control-center, authentication, command-execution
+- dependencies: bash, gaze, systemctl, xdg-open
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/arqueon/dms-gaze-auth/main/assets/screenshot.png)
+
+</details>
+
+
+
+
+
 #### [GitHub Heatmap Plus](https://github.com/maxlen727/DMS-GitHub_HeatMap_Plus)
 
 GitHub contribution heatmap for DankBar and your desktop, with color-coded activity levels and theme-aware styling.
@@ -5212,7 +5923,7 @@ Display GitHub contribution heatmap with color-coded activity levels
 - author: JDKamalakar
 - compositors: any
 - capabilities: dankbar-widget
-- dependencies: dms
+- dependencies: 
 - distro: any
 
 
@@ -5801,6 +6512,35 @@ A customizable LCD digital clock desktop widget
 
 
 
+#### [LaTeX to SVG](https://github.com/KinnariyaMamaTanha/latex2svg)
+
+Convert LaTeX formulas to portable SVG from Dank Bar, with a sharp preview, configurable saving, and image clipboard copy.
+
+<strong>requires DMS version</strong>: <em>>=1.5.0</em>
+
+- id: latex2svg
+- name: LaTeX to SVG
+- author: KinnariyaMamaTanha
+- compositors: any
+- capabilities: dankbar-widget
+- dependencies: python3, latex, dvisvgm
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/KinnariyaMamaTanha/latex2svg/main/assets/screenshot.png)
+
+</details>
+
+
+
+
+
 #### [Live Lyrics](https://gitlab.com/noahpolimon/dms-plugin-livelyrics)
 
 Display synced lyrics on your DankBar (Music Lyrics fork)
@@ -5841,7 +6581,7 @@ Displays LiveChart anime schedule data pulled from a local browser session.
 - author: JDKamalakar
 - compositors: any
 - capabilities: dankbar-widget
-- dependencies: dms, python3, browser_cookie3
+- dependencies: python3, browser_cookie3
 - distro: any
 
 
@@ -6072,6 +6812,35 @@ A desktop media player widget
 
 
 
+#### [Modern Clock](https://github.com/beefsizzle/ModernClockDMS)
+
+Minimal desktop clock with a large day name over the date and time - a port of Prayag2's KDE Modern Clock plasmoid
+
+
+
+- id: modernClock
+- name: Modern Clock
+- author: beefsizzle
+- compositors: any
+- capabilities: desktop-widget
+- dependencies: 
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/beefsizzle/ModernClockDMS/main/docs/screenshot.png)
+
+</details>
+
+
+
+
+
 #### [Music Lyrics](https://github.com/gasiyu/dms-plugin-musiclyrics)
 
 Display synced music lyrics from multiple sources.
@@ -6193,6 +6962,35 @@ Quickly toggle and configure display outputs in the Niri Wayland compositor.
 
 
 
+#### [Niri Display Settings Advance](https://github.com/jdkamalakar/DMS-Niri_Display_Settings)
+
+Quickly toggle and configure display outputs in the Niri Wayland compositor
+
+
+
+- id: niriDSA
+- name: Niri Display Settings Advance
+- author: JDKamalakar
+- compositors: niri
+- capabilities: control-center, dankbar-widget
+- dependencies: 
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/JDKamalakar/DMS-Niri_Display_Settings/refs/heads/main/assets/Full-Screen_UI.png)
+
+</details>
+
+
+
+
+
 #### [Niri Screenshot](https://github.com/jfchenier/dms-niri-screenshot)
 
 Control Niri screenshot actions from the Control Center
@@ -6251,6 +7049,35 @@ List and switch to open Niri windows from the launcher
 
 
 
+#### [Niri Workspaces](https://github.com/Embers-of-the-Fire/dank-niri-workspaces)
+
+Search and switch to Niri workspaces by name from the launcher
+
+<strong>requires DMS version</strong>: <em>>0.1.18</em>
+
+- id: niriWorkspaces
+- name: Niri Workspaces
+- author: Embers-of-the-Fire
+- compositors: niri
+- capabilities: launcher
+- dependencies: 
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://github.com/Embers-of-the-Fire/dank-niri-workspaces/raw/main/screenshot.png)
+
+</details>
+
+
+
+
+
 #### [Nix Package Runner](https://github.com/iahccc/NixPackageRunner)
 
 Search nixpkgs with nix search, launch directly with nix run, and copy nix shell commands from the context menu
@@ -6273,6 +7100,40 @@ Search nixpkgs with nix search, launch directly with nix run, and copy nix shell
 <summary>Screenshot</summary>
 
 ![screenshot](https://github.com/iahccc/NixPackageRunner/raw/main/screenshot.png)
+
+</details>
+
+
+
+
+
+#### [Nothing Clock](https://github.com/samgrande/Dank-Nothing-Clock)
+
+Nothing OS-inspired desktop clock with 6 styles: digital, split, analog, analog classic, digital cards, and orbit.
+
+
+
+- id: nothingClock
+- name: Nothing Clock
+- author: Sayan
+- compositors: any
+- capabilities: desktop-widget
+- dependencies: 
+- distro: any
+
+
+
+> [!NOTE]
+> This plugin is part of a monorepo, please copy the contents of the [nothingclock](https://github.com/samgrande/Dank-Nothing-Clock/tree/main/nothingclock) folder to your `~/.config/DankMaterialShell/plugins/` folder.
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/samgrande/Dank-Nothing-Clock/main/assets/screenshots/preview.png)
 
 </details>
 
@@ -6367,6 +7228,35 @@ DMS Launcher plugin to fuzzy-search Pass entries and copy them to the clipboard.
 
 
 
+#### [Persian Calendar Pro](https://github.com/rassoulshah/dms-persian-calendar)
+
+A bilingual Persian Jalali calendar with holidays, occasions, custom events, configurable date formats, and a full month popup.
+
+
+
+- id: persianCalendar
+- name: Persian Calendar Pro
+- author: Rassoul Shahsanaii
+- compositors: any
+- capabilities: dankbar-widget
+- dependencies: 
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/rassoulshah/dms-persian-calendar/main/screenshots/popup.png)
+
+</details>
+
+
+
+
+
 #### [Personal Dictionary](https://github.com/gemb0-0/Personal-Dictionary)
 
 Text expander for the launcher — copy/paste pre-defined text using a shortcut via launcher
@@ -6423,6 +7313,40 @@ Control connected devices via KDE Connect or Valent - view battery, send files, 
 <summary>Screenshot</summary>
 
 ![screenshot](https://raw.githubusercontent.com/AvengeMedia/dms-plugins/refs/heads/master/DankKDEConnect/screenshot.png)
+
+</details>
+
+
+
+
+
+#### [PokeDash](https://github.com/samgrande/PokeDash)
+
+Pick your favorite pokemon, plop it on your desktop, and watch it idle menacingly (or adorably) while you actually get work done.
+
+
+
+- id: pokeDash
+- name: PokeDash
+- author: Sayan
+- compositors: any
+- capabilities: desktop-widget
+- dependencies: 
+- distro: any
+
+
+
+> [!NOTE]
+> This plugin is part of a monorepo, please copy the contents of the [pokedash](https://github.com/samgrande/PokeDash/tree/main/pokedash) folder to your `~/.config/DankMaterialShell/plugins/` folder.
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/samgrande/PokeDash/main/assets/screenshots/preview.png)
 
 </details>
 
@@ -6510,6 +7434,35 @@ Display Islamic prayer times from Aladhan API
 <summary>Screenshot</summary>
 
 ![screenshot](https://raw.githubusercontent.com/muadzmo/prayertimes/refs/heads/main/screenshot.png)
+
+</details>
+
+
+
+
+
+#### [Proton VPN](https://github.com/JDKamalakar/DMS-Proton_VPN)
+
+Proton VPN client using pVPN backend CLI.
+
+
+
+- id: protonVPN
+- name: Proton VPN
+- author: JDKamalakar
+- compositors: any
+- capabilities: dankbar-widget, control-center
+- dependencies: pvpn
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/JDKamalakar/DMS-Proton_VPN/refs/heads/main/assets/POP-Up_UI.png)
 
 </details>
 
@@ -6644,7 +7597,7 @@ Quick access to recent downloads, screenshots, and pinned files (CROS Tote style
 - author: JDKamalakar
 - compositors: any
 - capabilities: dankbar-widget
-- dependencies: dms
+- dependencies: 
 - distro: any
 
 
@@ -6749,6 +7702,35 @@ Search recently opened XDG files directly from the DMS launcher
 
 
 
+#### [Retro Viseur](https://github.com/elopin42/dank-retro-viseur)
+
+Rear-view mirror: click the bar icon to open a small popup with your live webcam feed
+
+
+
+- id: retroViseur
+- name: Retro Viseur
+- author: elopin42
+- compositors: any
+- capabilities: dankbar-widget
+- dependencies: qt6-multimedia-ffmpeg
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/elopin42/dank-retro-viseur/main/screenshot.png)
+
+</details>
+
+
+
+
+
 #### [SSH Connections](https://github.com/merdely/dms-plugins)
 
 SSH to configured servers from the Launcher
@@ -6776,6 +7758,35 @@ SSH to configured servers from the Launcher
 <summary>Screenshot</summary>
 
 ![screenshot](https://raw.githubusercontent.com/merdely/dms-plugins/main/screenshots/sshconnections.png)
+
+</details>
+
+
+
+
+
+#### [SVGL Search](https://github.com/Grant07/dms-svgl-search)
+
+Search and copy SVGL brand logos directly from the DMS launcher
+
+
+
+- id: svglSearch
+- name: SVGL Search
+- author: Grant Mosha
+- compositors: any
+- capabilities: launcher
+- dependencies: wl-copy
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/Grant07/dms-svgl-search/main/assets/screenshot.png)
 
 </details>
 
@@ -6852,7 +7863,7 @@ Premium pill-shaped toolbar for quick screenshots and screen recording
 - author: JDKamalakar
 - compositors: any
 - capabilities: ipc
-- dependencies: dms, gpu screen recorder
+- dependencies: gpu screen recorder, slurp, grim, wl-clipboard, satty
 - distro: any
 
 
@@ -6872,7 +7883,7 @@ Premium pill-shaped toolbar for quick screenshots and screen recording
 
 #### [Screen Recorder](https://github.com/arqueon/dms-screen-recorder)
 
-Start, stop, and configure screen captures with gpu-screen-recorder on any Wayland compositor. Supports IPC keybinds.
+Start, stop, and configure screen captures with gpu-screen-recorder on any Wayland compositor. Audio modes: system audio, microphone, both mixed, or both as separate tracks. IPC keybinds and Control Center toggle.
 
 
 
@@ -6880,7 +7891,7 @@ Start, stop, and configure screen captures with gpu-screen-recorder on any Wayla
 - name: Screen Recorder
 - author: arqueon
 - compositors: any
-- capabilities: dankbar-widget
+- capabilities: daemon, dankbar-widget, control-center
 - dependencies: gpu-screen-recorder
 - distro: any
 
@@ -6950,6 +7961,35 @@ Record screen or selected area using wf-recorder with configurable codec, framer
 <summary>Screenshot</summary>
 
 ![screenshot](https://raw.githubusercontent.com/crowforkotlin/dms-screen-recorder/main/Screenshot.png)
+
+</details>
+
+
+
+
+
+#### [Screen Recorder YS](https://github.com/smithyyang/dms-screen-recorder)
+
+GPU-accelerated monitor recording with VFR, quality and resolution controls, cursor capture, countdown, and independently selectable system and microphone audio.
+
+<strong>requires DMS version</strong>: <em>>=1.2.0</em>
+
+- id: screenRecorderYS
+- name: Screen Recorder YS
+- author: youngshine
+- compositors: any
+- capabilities: dankbar-widget
+- dependencies: gpu-screen-recorder
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/smithyyang/dms-screen-recorder/main/assets/screenshot.png)
 
 </details>
 
@@ -7799,6 +8839,35 @@ Live microphone activity overlay while VoxType is recording. Shows a Cava audio 
 
 
 
+#### [VoxType Recording Overlay](https://github.com/rdannenbring/voxtype-dms-overlay)
+
+VoxType for DMS: a recording overlay (dim + active-window cutout + pulsing mic) and a bar/tray control widget — start/stop the daemon, switch output mode, pick your mic, switch engine, and run meetings from your DMS bar.
+
+
+
+- id: voxtypeOverlay
+- name: VoxType Recording Overlay
+- author: rdannenbring
+- compositors: any
+- capabilities: daemon, dankbar-widget, control-center, ipc
+- dependencies: voxtype
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/rdannenbring/voxtype-dms-overlay/main/assets/overlay.png)
+
+</details>
+
+
+
+
+
 #### [Voxtype](https://github.com/psyreactor/dms-voxtype)
 
 voxtype status plugin for DankBar
@@ -8633,6 +9702,20 @@ Oceanic's color scheme from https://discord.com/channels/1387519366651842574/145
 
 
 
+### Poimandres
+
+Blue & teal theme inspired by https://github.com/drcmda/poimandres-theme
+
+- **Author:** aryas
+- **ID:** `poimandres` **Version:** `1.0.0`
+
+![WCAG AAA (Partial)](https://img.shields.io/badge/WCAG_contrast-AAA_(Partial)-brightgreen)
+
+
+![Poimandres](themes/poimandres/preview.svg)
+
+
+
 ### Rosé Pine
 
 All natural pine, faux fur and a bit of soho vibes for the classy minimalist
@@ -8644,6 +9727,20 @@ All natural pine, faux fur and a bit of soho vibes for the classy minimalist
 
 
 ![Rosé Pine](themes/rose-pine/preview.svg)
+
+
+
+### Sayafushi
+
+because it's too sharp to exist
+
+- **Author:** r3everb
+- **ID:** `sayafushi` **Version:** `1.0.0`
+
+![WCAG AAA](https://img.shields.io/badge/WCAG_contrast-AAA-brightgreen)
+
+
+![Sayafushi](themes/sayafushi/preview.svg)
 
 
 
@@ -8728,6 +9825,20 @@ Popular Tokyo Night color scheme with vibrant blues and purples, Night and Moon 
 
 
 ![TokyoNight Night and Moon](themes/tokyonight-night-moon/preview.svg)
+
+
+
+### TokyoNight Storm
+
+Official Tokyo Night Storm color scheme - softer contrast storm variant with deep blue-grey surfaces
+
+- **Author:** Carlos Echenique (built from Tokyo Night Storm palette)
+- **ID:** `tokyoNightStorm` **Version:** `1.0.0`
+
+![WCAG AA](https://img.shields.io/badge/WCAG_contrast-AA-green)
+
+
+![TokyoNight Storm](themes/tokyonight-storm/preview.svg)
 
 
 
