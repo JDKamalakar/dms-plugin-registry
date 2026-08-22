@@ -289,6 +289,35 @@ Play and switch video wallpapers with multi-monitor support, lock-screen power s
 
 
 
+#### [Music Theme](https://github.com/felipeadeildo/dms-music-theme)
+
+Themes your system from the currently playing album art
+
+
+
+- id: musicTheme
+- name: Music Theme
+- author: felipeadeildo
+- compositors: any
+- capabilities: daemon
+- dependencies: 
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/felipeadeildo/dms-music-theme/main/assets/screenshot.png)
+
+</details>
+
+
+
+
+
 #### [Spotify Matugen](https://github.com/Grant07/dms-spotify-matugen)
 
 Lock DMS dynamic colors to Spotify album art while music is playing
@@ -693,6 +722,35 @@ Desktop media player widget with real-time synced lyrics and Material You 3 desi
 <summary>Screenshot</summary>
 
 ![screenshot](https://raw.githubusercontent.com/notsopreety/materialPlayer/refs/heads/main/assets/preview.png)
+
+</details>
+
+
+
+
+
+#### [Pure Lyrics](https://github.com/lildengzi/pureLyrics)
+
+A minimal floating desktop widget that displays real-time synced lyrics from multiple sources.
+
+
+
+- id: pureLyrics
+- name: Pure Lyrics
+- author: lildengzi
+- compositors: any
+- capabilities: desktop-widget
+- dependencies: 
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/lildengzi/pureLyrics/main/screenshot.png)
 
 </details>
 
@@ -2107,6 +2165,35 @@ QuickShell plugin for DankMaterialShell that exposes Pangolin VPN status, peer l
 
 
 
+#### [Mobile Network](https://github.com/NaClwww/dms-modem-plugin)
+
+Manage mobile broadband with NetworkManager: toggle the WWAN radio, view live modem, operator, and signal status, and create, edit, and activate APN profiles from the Control Center.
+
+
+
+- id: modemManager
+- name: Mobile Network
+- author: NaClwww
+- compositors: any
+- capabilities: daemon, control-center
+- dependencies: nmcli, mmcli
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/NaClwww/dms-modem-plugin/main/assets/control-center.png)
+
+</details>
+
+
+
+
+
 #### [ZeroTier Manager](https://github.com/nfrastack/dms-zerotierManager)
 
 Show ZeroTier network status in the bar and join/leave/route networks from a popout.
@@ -2224,6 +2311,35 @@ A simple locally-saved TODO list widget for the Dank bar.
 <summary>Screenshot</summary>
 
 ![screenshot](https://raw.githubusercontent.com/deepu105/dms-dank-todo/main/screenshot.png)
+
+</details>
+
+
+
+
+
+#### [Dcal Tasks](https://github.com/AntonyKor/dcal-tasks-launcher)
+
+List, search, create, and complete dcal tasks from the launcher, with natural language due dates.
+
+
+
+- id: dcalTasks
+- name: Dcal Tasks
+- author: AntonyKor
+- compositors: any
+- capabilities: launcher
+- dependencies: dcal
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/AntonyKor/dcal-tasks-launcher/master/docs/screenshot.png)
 
 </details>
 
@@ -2682,6 +2798,35 @@ Battery/AC-aware pre-blank dim with restore on resume for screen and keyboard. L
 
 
 
+#### [Battery & Power OSD](https://github.com/notsopreety/batteryOSD)
+
+Material YOU inspired On-Screen Display popup and liquid wave indicator for battery charging
+
+
+
+- id: batteryOSD
+- name: Battery & Power OSD
+- author: Samir Badaila
+- compositors: any
+- capabilities: daemon
+- dependencies: 
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/notsopreety/batteryOSD/refs/heads/main/screenshot.png)
+
+</details>
+
+
+
+
+
 #### [Caffeine](https://github.com/hthienloc/dms-caffeine)
 
 Keep your screen awake and prevent idle sleep with a single click.
@@ -3088,6 +3233,35 @@ Display public IP address, ISP, and location with a privacy-focused toggle.
 
 
 
+#### [Keyboard Backlight OSD](https://github.com/notsopreety/kbdBacklightOSD)
+
+On-Screen Display popup and keyboard shortcut controls for laptop keyboard backlight brightness
+
+
+
+- id: kbdBacklightOSD
+- name: Keyboard Backlight OSD
+- author: Samir Badaila
+- compositors: any
+- capabilities: daemon
+- dependencies: 
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/notsopreety/kbdBacklightOSD/refs/heads/main/prev-image.png)
+
+</details>
+
+
+
+
+
 #### [Lenovo Battery Settings](https://github.com/neoscaler/dms-lenovo-battery-settings)
 
 Manage Lenovo battery settings like conservation mode
@@ -3318,6 +3492,35 @@ Comprehensive system update widget backed by the Shelly (ALPM) CLI — pacman, A
 <summary>Screenshot</summary>
 
 ![screenshot](https://raw.githubusercontent.com/rdannenbring/dms-shelly-updater/main/preview/updates.png)
+
+</details>
+
+
+
+
+
+#### [Storage Monitor](https://github.com/YoungJurry/dms-storage-monitor)
+
+Monitor total and per-partition storage usage with progress bars, and mount or unmount internal and removable drives via udisks2.
+
+
+
+- id: storageMonitor
+- name: Storage Monitor
+- author: youngshine
+- compositors: any
+- capabilities: dankbar-widget
+- dependencies: udisks2
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/YoungJurry/dms-storage-monitor/main/assets/screenshot.png)
 
 </details>
 
@@ -6309,6 +6512,35 @@ Switch between Hyprland windows with live previews
 
 
 
+#### [Hyprwhspr Voice Overlay](https://github.com/lucianosrp/HyprwhsprVoiceOverlay)
+
+On-screen voice visualizer for hyprwhspr. A large mirrored equalizer, driven by the live microphone level, that fades in only while hyprwhspr is recording.
+
+<strong>requires DMS version</strong>: <em>>=1.5.0</em>
+
+- id: hyprwhsprVoiceOverlay
+- name: Hyprwhspr Voice Overlay
+- author: lucianosrp
+- compositors: any
+- capabilities: desktop-widget
+- dependencies: hyprwhspr
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/lucianosrp/HyprwhsprVoiceOverlay/main/screenshot.png)
+
+</details>
+
+
+
+
+
 #### [ImageConverter](https://github.com/murilo-gotardo/dms-image-converter)
 
 Convert images between formats (PNG, JPG, WEBP, BMP, TIFF) from the DankBar
@@ -7816,6 +8048,35 @@ A simple multi model ai client to use with your dank shell. Use it ollama, gemin
 <summary>Screenshot</summary>
 
 ![screenshot](https://raw.githubusercontent.com/ss44/sathi.ai/refs/heads/master/assets/screenshot-01.png)
+
+</details>
+
+
+
+
+
+#### [Scratchpad Helper](https://github.com/fluxwrk/dms-scratchpad-helper)
+
+A visual scratchpad picker for MangoWM with cached previews and optional managed named scratchpads
+
+<strong>requires DMS version</strong>: <em>>=1.5.0</em>
+
+- id: scratchpadHelper
+- name: Scratchpad Helper
+- author: fluxwrk
+- compositors: mangowc
+- capabilities: daemon, dankbar-widget, control-center
+- dependencies: mmsg
+- distro: any
+
+
+
+
+
+<details>
+<summary>Screenshot</summary>
+
+![screenshot](https://raw.githubusercontent.com/fluxwrk/dms-scratchpad-helper/main/assets/scratchpad-picker.png)
 
 </details>
 
